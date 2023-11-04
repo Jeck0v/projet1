@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="Log.PNG">
+    <title>Shobukan Dojo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contact.sql">
+    <link rel="stylesheet" href="contact.php">
+    <link rel="stylesheet" type="text/css" href="shop.html">
+	<link rel="stylesheet" type="text/css" href="Cookies.js"> 
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css"/>
+</head>
+<body>
+    <script
+
+      src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js"
+
+      data-cfasync="false"
+
+    ></script>
+
+    <script>
+
+      window.cookieconsent.initialise({
+
+        palette: {
+
+          popup: {
+
+            background: "#394a95",
+
+            text: "#ffffff",
+
+          },
+
+          button: {
+
+            background: "#ffb200",
+
+            text: "#000000",
+
+          },
+
+        },
+
+        theme: "classic",
+
+        position: "bottom-left",
+
+        type: "opt-out",
+
+        content: {
+
+          message:
+
+            "Ce site utilise des cookies pour vous assurer une meilleure expérience. ",
+
+          dismiss: "J'accepte !",
+
+          allow: "J'accepte !",
+
+          deny: "Refuser",
+
+          link: "En savoir plus",
+
+        },
+
+      });
+
+    </script>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Accueil</a></li>
+                <li><a href="#about">À propos de nous</a></li>
+                <li><a href="#classes">Cours</a></li>
+                <li><a href="#contact">Nous contacter</a></li>
+                <li><a href="shop.html">Notre Boutique</a></li>
+            </ul>
+        </nav>
+        <h1>Shobukan Dojo</h1>
+		
+    </header>
+    <section id="home">
+        <h2>Bienvenue dans notre dojo de Kendo</h2>
+        <p>Le kendo est un art martial japonais qui met l'accent sur l'utilisation de l'épée. Notre dojo propose des cours pour tous les niveaux, des débutants aux avancés.</p>
+        <button><a href="#classes">Voir nos cours</a></button>
+    </section>
+
+    <section id="about">
+        <h2>À propos de nous</h2>
+        <p>Notre dojo a été fondé en 2001 par Jean-Pierre Réniez. Depuis lors, nous avons formé des centaines de pratiquants de kendo de tous âges et de tous niveaux. Nous sommes fiers de transmettre l'esprit du kendo à la prochaine génération.
+            Notre Senseï s'appuie quotidiennement dans sa pédagogie sur plusieurs assistants qualifiés avec, en particulier, Emmanuel Laurier, l'un de ses plus anciens disciples (plus de 40 ans de pratique) qui est quatrième Dan de Kendo (B.F.E.K.), cinquième Dan de Iaïdo (B.F.E.I.), Kyoshi huitième Dan de Battodo, Kyoshi septième Dan de Jodo (B.F.E.J. et C.F.E.B.), et Kyoshi 7ème Dan de Kobudo. Par ailleurs, ce dernier a également reçu en mains propres de Matsumura Shigéhiro Senseï (Menkyo Kaïden Shindo Muso Ryu Jojutsu) le Gomokuroku ou certificat d'enseignement profond de l'école Shindo Muso Ryu de Jo jutsu en Novembre 2014.
+        </p>
+        <img src="https://static.wixstatic.com/media/f26e81_f008e24ee864417eaabb41bd5e7b89d4~mv2.jpg/v1/fill/w_583,h_786,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/f26e81_f008e24ee864417eaabb41bd5e7b89d4~mv2.jpg" alt="Jean-Pierre Réniez">
+    </section>
+
+    <section id="classes">
+        <h2>Cours</h2>
+        <ul>
+            <li>Kendo |</li>
+            <li>Iaïdo |</li>
+            <li>Battodo |</li>
+            <li>Jodo Jojutsu |</li>
+            <li>Fuzoku Budo</li>
+        </ul>
+        <p>Nous proposons des cours pour tous les niveaux, encadrés par des instructeurs qualifiés. Les cours sont dispensés en petits groupes pour une meilleure attention et une formation plus personnalisée.
+            Les cours sont possible le Lundi, le Mercredi, et le Vendredi. De plus des stages sont possible durant l'année.</p>
+            <p><span>Le kendo est la version moderne du kenjutsu, l'escrime au sabre japonais.</span></p>
+            <p><span>L’iaidō est un art martial basé sur l'action de dégainer le sabre et de frapper en un seul geste. </span></p>
+           <p><span>Le battōdō est l'art de la coupe. </span></p>
+           <p><span>Dans un cours de Jodo vous apprenez à utiliser un bâton pour vous défendre face à un adversaire armé d’un sabre en bois.</span> </p>
+            <p><span>Le Fuzoku Budo sont les techniques anciennes.</span></p>
+ 
+        </p>
+        <button><a href="#contact">Nous contacter</a></button>
+    </section>
+
+    <section id="contact">
+        <h2>Nous contacter</h2>
+        <p>N'hésitez pas à nous contacter si vous avez des questions ou si vous souhaitez vous inscrire à l'un de nos cours.</p>
+        <form action="contact.php" method="post">
+            <label for="name">Nom:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Envoyer</button>
+        </form>
+    </section>
+	
+
+    <footer>
+        <p>Copyright © Dojo Shobukan </p>
+		
